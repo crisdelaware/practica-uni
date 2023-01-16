@@ -1,0 +1,43 @@
+<div class="container">
+    <h3 class="ml-3">Listado de Alumnos</h3>
+
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="card">
+                    <!-- <div class="card-body" *ngFor="let registro of Alumno let i = index;"> -->
+                        
+                        <!-- <h5>Informacion Alumno</h5>
+                        <p class="card-text">
+                            {{ i + 1 }} - {{ registro.nombre }} - {{ registro.carrera }}
+                        </p>
+
+                        <hr> -->
+
+                        <table class="table table-borderless">
+                            <thead>
+                              <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Carrera</th>
+                                <th scope="col">Acciones</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let registro of Alumno;">
+                                <th scope="row">{{registro.id}}</th>
+                                <td>{{ registro.nombre }}</td>
+                                <td>{{ registro.carrera }}</td>
+                                <td class="d-flex flex-row mb-3 grid gap-3">
+                                    <button class="btn btn-danger">Eliminar</button>
+                                    <button class="btn btn-warning" (click)="editar(registro)">Editar</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

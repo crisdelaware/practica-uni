@@ -1,0 +1,104 @@
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title text-center">Agregar Alumno</h3>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="miFormulario" (ngSubmit)="guardar()">
+
+
+            <div class="mb-3 row">
+                <label for="selectUnidadAcademica" class="col-sm-4 col-form-label">Unidad Academica: *</label>
+                <div class="col-sm-8">
+                    <select class="form-select" formControlName="unidadAcademica">
+                        <option >Universidad Tecnologica de Aguascalientes</option>
+                        <option >Universidad Tecnologica del Norte de Aguascalientes</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="mb-3 row">
+                <label for="selectCarrera" class="col-sm-4 col-form-label">Carrera: *</label>
+                <div class="col-sm-8">
+                    <select class="form-select" formControlName="carrera">
+                        <option selected>Ing. en Desarrollo y Gestion de Software</option>
+                        <option>Ing. en Mantenimiento Industrial</option>
+                        <option>Ing. en Mecatronica</option>
+                        <option>Ing. en Sistemas Productivos</option>
+                      </select>
+                </div>
+            </div>
+        
+            <div class="mb-3 row">
+                <label for="selectEspecialidad" class="col-sm-4 col-form-label">Especialidad: *</label>
+                <div class="col-sm-8">
+                    <select class="form-select" formControlName="especialidad">
+                        <option selected>Ing. en Desarrollo y Gestion de Software</option>
+                        <option>Ing. en Redes Inteligentes y Ciberseguridad</option>
+                      </select>
+                </div>
+            </div>
+        
+            <div class="mb-3 row">
+                <label for="selectPeriodo" class="col-sm-4 col-form-label">Periodo: *</label>
+                <div class="col-sm-5">
+                    <select class="form-select" formControlName="periodos">
+                        <option >Enero - Abril 2022</option>
+                        <option >Abril - Agosto 2022</option>
+                        <option >Agosto - Diciembre 2022</option>
+                      </select>
+                </div>
+            </div>
+        
+            <div class="mb-3 row">
+                <label for="selectCuatrimestre" class="col-sm-4 col-form-label">Cuatrimestre: *</label>
+                <div class="col-sm-3">
+                    <select class="form-select" formControlName="cuatrimestre">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                      </select>
+                </div>
+            </div>
+        
+            <div class="mb-3 row">
+                <label for="selectPlandeestudio" class="col-sm-4 col-form-label">Plan de estudio: *</label>
+                <div class="col-sm-4">
+                    <select class="form-select" formControlName="plandeEstudio">
+                        <option >IDGS 18 20</option>
+                      </select>
+                </div>
+            </div>
+        
+            <div class="mb-3 row">
+                <label for="selectTurno" class="col-sm-4 col-form-label">Turno: *</label>
+                <div class="col-sm-4">
+                    <select class="form-select" formControlName="turno">
+                        <option >Matutino</option>
+                        <option >Vespertino</option>
+                      </select>
+                </div>
+            </div>
+        
+            <div class="mb-3 row">
+                <label for="inputNombre" class="col-sm-4 col-form-label">Nombre: *</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" formControlName="nombre">
+                </div>
+            </div>
+        
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-success me-md-2" type="submit">Guardar</button>
+                
+            </div>
+        
+        </form>
+    </div>
+</div>
